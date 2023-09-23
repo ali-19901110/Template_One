@@ -91,6 +91,7 @@ body{
     top: calc(100% + 15px);
     display: none;
     color: white;
+    z-index: 2000;
 }
 .header .links ul::before {
     content: "";
@@ -119,3 +120,36 @@ body{
 .header .links ul li:not(:last-child) a{
     border-bottom: 1px solid #aaa;
 }
+/* End header */
+/* Start Landing */
+.landing{
+    background-image: url(../images/pexels-pixabay-355770.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100dvh - 64px);
+    position: relative;
+   
+}
+.landing .intro-text{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
+    
+}
+.landing .intro-text h1{
+    color: var(--mainColor);
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: bold;
+}
+.landing .intro-text p{
+   
+
+}
+
+/* End Landing */
