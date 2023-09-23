@@ -153,3 +153,32 @@ body{
 }
 
 /* End Landing */
+/* Start features */
+.features{
+   background-color: #f6f6f6; 
+   padding: 60px 0;
+}
+.features .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+    gap: 20px;
+}
+.features .feature{
+    padding: 10px;
+    text-align: center;
+   
+}
+.features .feature i{
+    color: var(--mainColor);
+    font-size: 30px;
+}
+.features .feature h3{
+    margin: 15px 0;
+    font-weight: 800;
+}
+.features .feature p{
+color: #777;
+font-size: 17px;
+line-height: 1.6;
+}
+/* End features */
