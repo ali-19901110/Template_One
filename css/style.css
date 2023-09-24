@@ -13,12 +13,33 @@
 body{
     font-family: 'Work Sans', sans-serif;
 }
+/* Globale Variables */
+/* Start Component */
+.special-heading{
+    color: #f6f6f6;
+    font-size: 100px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin: 0;
+}
+.special-heading + p{
+   margin: -30px 0 0;
+   font-size: 20px;
+   text-align: center;
+   color: #797979;
+}
+@media (max-width: 767px){
+    .special-heading{
+        font-size: 80px;
+    }
+}
+/* End Component */
 .container{
     padding-left: 15px;
     padding-right: 15px;
     margin-left:  auto;
     margin-right:  auto;
-  
 }
 @media (min-width: 768px){
     .container{
@@ -147,10 +168,10 @@ body{
     font-size: 45px;
     font-weight: bold;
 }
-.landing .intro-text p{
+/* .landing .intro-text p{
    
 
-}
+} */
 
 /* End Landing */
 /* Start features */
@@ -182,3 +203,77 @@ font-size: 17px;
 line-height: 1.6;
 }
 /* End features */
+/* Start services */
+    .services{
+        padding: 60px 0;
+    }
+    .services .container{
+       
+    }
+    .services .services-comntent{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        column-gap:20px;
+    }
+    .services .services-comntent .col{
+      
+    }
+    .services .services-comntent .col .row{
+        display: flex;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 767px){
+        .services .services-comntent .col .row{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        } 
+    }
+        .services .services-comntent .col .row .main-content{
+        margin-left: 20px;
+        flex: 1;
+    }
+    .services .services-comntent .col{
+      
+    }
+    /* .services-comntent div:nth-child(2) div:first-child{
+        min-height: 130px;
+    } */
+    .services .services-comntent .col .row i{
+        color: var(--mainColor);
+        flex-basis: 60px;
+        font-size: 30px;
+    }
+    .services .services-comntent .col .row .main-content h4{
+      
+    }
+    .services .services-comntent .col .row .main-content p{
+      margin-top: 20px;
+      color: #777;
+    }
+    .services-comntent .image{
+        position: relative;
+    }
+    .services-comntent .image::after{
+        content: "";
+        width: 50px;
+        height: calc(100% + 100px);
+        position: absolute;
+        right: -25px;
+        top: -50px;
+        background-color: #2d4758;
+        z-index: -2;
+    }
+    @media (max-width: 991px){
+        .image{
+            display: none;
+        }
+    }
+    .services-comntent img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+/* End Services */
